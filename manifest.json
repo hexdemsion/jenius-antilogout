@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Jenius Anti-Logout",
+  "version": "1.0",
+  "description": "Jenius Anti-Logout | Prevent Jenius automatic logout",
+  "icons": {
+    "128": "jenius-icon.png",
+    "48": "jenius-icon.png",
+    "16": "jenius-icon.png"
+  },
+  "browser_action": {
+    "default_action": "jenius-icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "keepBusy.js"
+      ],
+      "matches": [
+        "https://2secure.jenius.co.id/*"
+      ]
+    }
+  ]
+}
